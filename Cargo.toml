@@ -7,7 +7,7 @@ edition = "2018"
 [dependencies]
 env_logger = "0.6"
 failure = "0.1.5"
-hyper = "^0.10"
+hyper = "^0.12"
 hyper-rustls = "^0.6"
 hyper-native-tls = "0.3.0"
 native-tls = "0.2"
