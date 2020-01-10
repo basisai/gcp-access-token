@@ -5,7 +5,7 @@ authors = ["Yong Wen Chua <lawliet89@users.noreply.github.com>"]
 edition = "2018"
 
 [dependencies]
-futures = "0.1"
+futures = "0.3"
 env_logger = "0.7"
 failure = "0.1.6"
 hyper = "0.12"
