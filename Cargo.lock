@@ -288,7 +288,7 @@ dependencies = [
  "env_logger",
  "failure",
  "serde_json",
- "tokio",
+ "tokio 0.3.2",
  "yup-oauth2",
 ]
 
@@ -307,7 +307,7 @@ dependencies = [
  "indexmap",
  "log",
  "slab",
- "tokio",
+ "tokio 0.2.22",
  "tokio-util",
 ]
 
@@ -384,7 +384,7 @@ dependencies = [
  "net2",
  "pin-project",
  "time",
- "tokio",
+ "tokio 0.2.22",
  "tower-service",
  "want",
 ]
@@ -402,7 +402,7 @@ dependencies = [
  "log",
  "rustls",
  "rustls-native-certs",
- "tokio",
+ "tokio 0.2.22",
  "tokio-rustls",
  "webpki",
 ]
@@ -884,9 +884,9 @@ dependencies = [
 
 [[package]]
 name = "tokio"
-version = "0.2.21"
+version = "0.2.22"
 source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d099fa27b9702bed751524694adbe393e18b36b204da91eb1cbbbbb4a5ee2d58"
+checksum = "5d34ca54d84bf2b5b4d7d31e901a8464f7b60ac145a284fba25ceb801f2ddccd"
 dependencies = [
  "bytes",
  "fnv",
@@ -897,7 +897,17 @@ dependencies = [
  "mio",
  "pin-project-lite",
  "slab",
- "tokio-macros",
+ "tokio-macros 0.2.5",
+]
+
+[[package]]
+name = "tokio"
+version = "0.3.2"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "71f1b20504fd0aa9dab3ae17e8c4dd9431e5e08fd6921689f9745a4004883a17"
+dependencies = [
+ "pin-project-lite",
+ "tokio-macros 0.3.1",
 ]
 
 [[package]]
@@ -912,6 +922,17 @@ dependencies = [
 ]
 
 [[package]]
+name = "tokio-macros"
+version = "0.3.1"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "21d30fdbb5dc2d8f91049691aa1a9d4d4ae422a21c334ce8936e5886d30c5c45"
+dependencies = [
+ "proc-macro2",
+ "quote",
+ "syn",
+]
+
+[[package]]
 name = "tokio-rustls"
 version = "0.13.0"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -919,7 +940,7 @@ checksum = "4adb8b3e5f86b707f1b54e7c15b6de52617a823608ccda98a15d3a24222f265a"
 dependencies = [
  "futures-core",
  "rustls",
- "tokio",
+ "tokio 0.2.22",
  "webpki",
 ]
 
@@ -934,7 +955,7 @@ dependencies = [
  "futures-sink",
  "log",
  "pin-project-lite",
- "tokio",
+ "tokio 0.2.22",
 ]
 
 [[package]]
@@ -1185,6 +1206,6 @@ dependencies = [
  "seahash",
  "serde",
  "serde_json",
- "tokio",
+ "tokio 0.2.22",
  "url",
 ]
